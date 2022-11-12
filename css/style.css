@@ -7,6 +7,11 @@
 
 h1{
     font-family: 'Krona One', sans-serif;
-    font-size: 2.5em;
     font-weight: bold;
+}
+
+button.swal-button.swal-button--confirm {
+    background: #0d6efd !important;
+    padding: 10px 26px !important;
+    font-size: 18px !important;
 }

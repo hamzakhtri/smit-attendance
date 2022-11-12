@@ -15,10 +15,6 @@
 </head>
 
 <body id="login-sc">
-
-
-
-
     <section class="vh-100">
         <div class="container-fluid h-custom">
             <div class="row d-flex justify-content-center align-items-center vh-100">
@@ -28,7 +24,7 @@
                 </div>
                 <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
 
-
+                    <h5>FOR ADMIN</h5>
                     <h1><span class="text-primary">SMIT</span> ATTENDANCE</h1><br>
 
                     <form>
@@ -36,26 +32,26 @@
 
                         <!-- Email input -->
                         <div class="form-outline mb-4">
-                            <input type="email" id="form3Example3" class="form-control form-control-lg"
+                            <input type="email" id="email" class="form-control form-control-lg"
                                 placeholder="Enter a valid email address" />
                             <label class="form-label" for="form3Example3">Admin Email</label>
                         </div>
 
                         <!-- Password input -->
                         <div class="form-outline mb-3">
-                            <input type="password" id="form3Example4" class="form-control form-control-lg"
+                            <input type="password" id="password" class="form-control form-control-lg"
                                 placeholder="Enter password" />
                             <label class="form-label" for="form3Example4">Password</label>
                         </div>
 
 
 
-                        <div class="text-center text-lg-start mt-4 pt-2">
-                            <button type="button" class="btn btn-primary btn-lg"
-                                style="padding-left: 2.5rem; padding-right: 2.5rem;">Login</button>
-                        </div>
-
+                       
                     </form>
+                    <div class="text-center text-lg-start mt-4 pt-2">
+                        <button type="button" class="btn btn-primary btn-lg"
+                            style="padding-left: 2.5rem; padding-right: 2.5rem;" onclick="signin()">Login</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -63,6 +59,15 @@
     </section>
 
 
+
+
+
+
+    <script type="module" src="./config/firebase.js"></script>
+    <script type="module" src="js/app.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+ 
 </body>
 
 </html>
